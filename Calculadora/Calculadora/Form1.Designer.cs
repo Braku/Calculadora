@@ -59,6 +59,8 @@
             this.bc.TabIndex = 0;
             this.bc.Text = "C";
             this.bc.UseVisualStyleBackColor = true;
+            this.bc.Click += new System.EventHandler(this.Bc_Click);
+            this.bc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Bc_KeyPress);
             // 
             // bmas
             // 

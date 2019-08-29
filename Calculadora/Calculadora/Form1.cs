@@ -383,7 +383,7 @@ namespace Calculadora
 
         private void Bigu_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == 61)
+            if (e.KeyChar == 13)
             {
                 Bigu_Click(sender, e);
             }
@@ -407,6 +407,19 @@ namespace Calculadora
             else
             {
                 restb.Text = restb.Text + "%";
+            }
+        }
+
+        private void Bc_Click(object sender, EventArgs e)
+        {
+            this.restb.Text = ;
+        }
+
+        //private void Bc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 127)
+            {
+                Bc_Click(sender, e);
             }
         }
     }
