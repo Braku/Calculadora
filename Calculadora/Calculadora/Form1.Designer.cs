@@ -37,7 +37,6 @@
             this.bdiv = new System.Windows.Forms.Button();
             this.bmult = new System.Windows.Forms.Button();
             this.bpo = new System.Windows.Forms.Button();
-            this.bpunt = new System.Windows.Forms.Button();
             this.b0 = new System.Windows.Forms.Button();
             this.b1 = new System.Windows.Forms.Button();
             this.b2 = new System.Windows.Forms.Button();
@@ -49,6 +48,7 @@
             this.b8 = new System.Windows.Forms.Button();
             this.b9 = new System.Windows.Forms.Button();
             this.restb = new System.Windows.Forms.TextBox();
+            this.bpunt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bc
@@ -60,7 +60,6 @@
             this.bc.Text = "C";
             this.bc.UseVisualStyleBackColor = true;
             this.bc.Click += new System.EventHandler(this.Bc_Click);
-            this.bc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Bc_KeyPress);
             // 
             // bmas
             // 
@@ -71,7 +70,6 @@
             this.bmas.Text = "+";
             this.bmas.UseVisualStyleBackColor = true;
             this.bmas.Click += new System.EventHandler(this.Bmas_Click);
-            this.bmas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Bmas_KeyPress);
             // 
             // bigu
             // 
@@ -82,7 +80,6 @@
             this.bigu.Text = "=";
             this.bigu.UseVisualStyleBackColor = true;
             this.bigu.Click += new System.EventHandler(this.Bigu_Click);
-            this.bigu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Bigu_KeyPress);
             // 
             // bce
             // 
@@ -103,7 +100,6 @@
             this.bres.Text = "-";
             this.bres.UseVisualStyleBackColor = true;
             this.bres.Click += new System.EventHandler(this.Bres_Click);
-            this.bres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Bres_KeyPress);
             // 
             // bdiv
             // 
@@ -114,7 +110,6 @@
             this.bdiv.Text = "/";
             this.bdiv.UseVisualStyleBackColor = true;
             this.bdiv.Click += new System.EventHandler(this.Bdiv_Click);
-            this.bdiv.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Bdiv_KeyPress);
             // 
             // bmult
             // 
@@ -125,7 +120,6 @@
             this.bmult.Text = "*";
             this.bmult.UseVisualStyleBackColor = true;
             this.bmult.Click += new System.EventHandler(this.Bmult_Click);
-            this.bmult.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Bmult_KeyPress);
             // 
             // bpo
             // 
@@ -136,18 +130,6 @@
             this.bpo.Text = "%";
             this.bpo.UseVisualStyleBackColor = true;
             this.bpo.Click += new System.EventHandler(this.Bpo_Click);
-            this.bpo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Bpo_KeyPress);
-            // 
-            // bpunt
-            // 
-            this.bpunt.Location = new System.Drawing.Point(118, 211);
-            this.bpunt.Name = "bpunt";
-            this.bpunt.Size = new System.Drawing.Size(46, 47);
-            this.bpunt.TabIndex = 8;
-            this.bpunt.Text = ".";
-            this.bpunt.UseVisualStyleBackColor = true;
-            this.bpunt.Click += new System.EventHandler(this.Bpunt_Click);
-            this.bpunt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Bpunt_KeyPress);
             // 
             // b0
             // 
@@ -158,7 +140,6 @@
             this.b0.Text = "0";
             this.b0.UseVisualStyleBackColor = true;
             this.b0.Click += new System.EventHandler(this.B0_Click);
-            this.b0.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.B0_KeyPress);
             // 
             // b1
             // 
@@ -169,7 +150,6 @@
             this.b1.Text = "1";
             this.b1.UseVisualStyleBackColor = true;
             this.b1.Click += new System.EventHandler(this.B1_Click);
-            this.b1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.B1_KeyPress);
             // 
             // b2
             // 
@@ -180,7 +160,6 @@
             this.b2.Text = "2";
             this.b2.UseVisualStyleBackColor = true;
             this.b2.Click += new System.EventHandler(this.B2_Click);
-            this.b2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.B2_KeyPress);
             // 
             // b3
             // 
@@ -191,7 +170,6 @@
             this.b3.Text = "3";
             this.b3.UseVisualStyleBackColor = true;
             this.b3.Click += new System.EventHandler(this.B3_Click);
-            this.b3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.B3_KeyPress);
             // 
             // b4
             // 
@@ -202,7 +180,6 @@
             this.b4.Text = "4";
             this.b4.UseVisualStyleBackColor = true;
             this.b4.Click += new System.EventHandler(this.B4_Click);
-            this.b4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.B4_KeyPress);
             // 
             // b5
             // 
@@ -213,7 +190,6 @@
             this.b5.Text = "5";
             this.b5.UseVisualStyleBackColor = true;
             this.b5.Click += new System.EventHandler(this.B5_Click);
-            this.b5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.B5_KeyPress);
             // 
             // b6
             // 
@@ -224,7 +200,6 @@
             this.b6.Text = "6";
             this.b6.UseVisualStyleBackColor = true;
             this.b6.Click += new System.EventHandler(this.B6_Click);
-            this.b6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.B6_KeyPress);
             // 
             // b7
             // 
@@ -235,7 +210,6 @@
             this.b7.Text = "7";
             this.b7.UseVisualStyleBackColor = true;
             this.b7.Click += new System.EventHandler(this.B7_Click);
-            this.b7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.B7_KeyPress);
             // 
             // b8
             // 
@@ -246,7 +220,6 @@
             this.b8.Text = "8";
             this.b8.UseVisualStyleBackColor = true;
             this.b8.Click += new System.EventHandler(this.B8_Click);
-            this.b8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.B8_KeyPress);
             // 
             // b9
             // 
@@ -257,7 +230,6 @@
             this.b9.Text = "9";
             this.b9.UseVisualStyleBackColor = true;
             this.b9.Click += new System.EventHandler(this.B9_Click);
-            this.b9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.B9_KeyPress);
             // 
             // restb
             // 
@@ -269,6 +241,17 @@
             this.restb.Size = new System.Drawing.Size(252, 26);
             this.restb.TabIndex = 19;
             this.restb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.restb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Restb_KeyPress);
+            // 
+            // bpunt
+            // 
+            this.bpunt.Location = new System.Drawing.Point(118, 211);
+            this.bpunt.Name = "bpunt";
+            this.bpunt.Size = new System.Drawing.Size(46, 47);
+            this.bpunt.TabIndex = 8;
+            this.bpunt.Text = ".";
+            this.bpunt.UseVisualStyleBackColor = true;
+            this.bpunt.Click += new System.EventHandler(this.Bpunt_Click);
             // 
             // Form1
             // 
@@ -313,7 +296,6 @@
         private System.Windows.Forms.Button bdiv;
         private System.Windows.Forms.Button bmult;
         private System.Windows.Forms.Button bpo;
-        private System.Windows.Forms.Button bpunt;
         private System.Windows.Forms.Button b0;
         private System.Windows.Forms.Button b1;
         private System.Windows.Forms.Button b2;
@@ -325,6 +307,7 @@
         private System.Windows.Forms.Button b8;
         private System.Windows.Forms.Button b9;
         private System.Windows.Forms.TextBox restb;
+        private System.Windows.Forms.Button bpunt;
     }
 }
 

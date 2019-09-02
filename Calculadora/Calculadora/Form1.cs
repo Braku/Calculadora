@@ -15,10 +15,6 @@ namespace Calculadora
 
         double a;
         double b;
-        double d;
-        double f;
-        double g;
-        double h;
         string c;
        // int bandera;
 
@@ -27,10 +23,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = "0";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + "0";
+                this.restb.Focus();
             }
         }
 
@@ -39,10 +37,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = "1";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + "1";
+                this.restb.Focus();
             }
         }
 
@@ -51,10 +51,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = "2";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + "2";
+                this.restb.Focus();
             }
         }
 
@@ -63,10 +65,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = "3";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + "3";
+                this.restb.Focus();
             }
         }
 
@@ -75,10 +79,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = "4";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + "4";
+                this.restb.Focus();
             }
         }
 
@@ -87,10 +93,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = "5";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + "5";
+                this.restb.Focus();
             }
         }
 
@@ -99,10 +107,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = "6";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + "6";
+                this.restb.Focus();
             }
         }
 
@@ -111,10 +121,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = "7";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + "7";
+                this.restb.Focus();
             }
         }
 
@@ -123,10 +135,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = "8";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + "8";
+                this.restb.Focus();
             }
         }
 
@@ -135,10 +149,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = "9";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + "9";
+                this.restb.Focus();
             }
         }
 
@@ -147,10 +163,12 @@ namespace Calculadora
             if (restb.Text == "")
             {
                 restb.Text = ".";
+                this.restb.Focus();
             }
             else
             {
                 restb.Text = restb.Text + ".";
+                this.restb.Focus();
             }
         }
 
@@ -164,51 +182,23 @@ namespace Calculadora
 
         private void Bigu_Click(object sender, EventArgs e)
         {
-
             b = Convert.ToDouble(this.restb.Text);
-           // d = Convert.ToDouble(this.restb.Text);
-           // f = Convert.ToDouble(this.restb.Text);
-          //  g = Convert.ToDouble(this.restb.Text);
-           // h = Convert.ToDouble(this.restb.Text);
-
             switch (c)
-
             {
-
                 case "+":
-
-                    //d = Convert.ToDouble(this.restb.Text);
-                   // f = Convert.ToDouble(this.restb.Text);
                     this.restb.Text = Convert.ToString(b + a);
-                   // this.restb.Text = Convert.ToString(b + a + d);
-                    //this.restb.Text = Convert.ToString(b + a + d + f);
-                   // this.restb.Text = Convert.ToString(b + a + d + f + g);
-                  //  this.restb.Text = Convert.ToString(b + a + d + f + g + h);
-
                     break;
-
-
 
                 case "-":
-
-                    this.restb.Text = Convert.ToString(b - a - d - f - g - h);
-
+                    this.restb.Text = Convert.ToString(b - a);
                     break;
-
-
 
                 case "*":
-
-                    this.restb.Text = Convert.ToString(b * a * d * f * g * h);
-
+                    this.restb.Text = Convert.ToString(b * a);
                     break;
-
-
-
+                                       
                 case "/":
-
-                    this.restb.Text = Convert.ToString(b / a / d / f / g / h);
-
+                    this.restb.Text = Convert.ToString(b / a);
                     break;
 
             }
@@ -241,186 +231,66 @@ namespace Calculadora
 
         private void Bce_Click(object sender, EventArgs e)
         {
-            a = Convert.ToDouble("");
-            b = Convert.ToDouble("");
-            this.restb.Text = "";
-        }
 
-        private void B1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 49)
+            if (restb.Text.Length == 1)
             {
-                B1_Click(sender, e);
+                restb.Text = "";
             }
-
-        }
-
-        private void B2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 50)
+            else
             {
-                B2_Click(sender, e);
-            }
-
-        }
-
-        private void B3_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 51)
-            {
-                B3_Click(sender, e);
-            }
-
-        }
-
-        private void B4_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 52)
-            {
-                B4_Click(sender, e);
-            }
-
-        }
-
-        private void B5_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 53)
-            {
-                B5_Click(sender, e);
-            }
-
-        }
-
-        private void B6_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 54)
-            {
-                B6_Click(sender, e);
-            }
-
-        }
-
-        private void B7_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 55)
-            {
-                B7_Click(sender, e);
-            }
-
-        }
-
-        private void B8_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 56)
-            {
-                B8_Click(sender, e);
-            }
-
-        }
-
-        private void B9_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 57)
-            {
-                B9_Click(sender, e);
-            }
-
-        }
-
-        private void Bpunt_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 46)
-            {
-                Bpunt_Click(sender, e);
-            }
-
-        }
-
-        private void Bpo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 37)
-            {
-                Bpo_Click(sender, e);
-            }
-
-        }
-
-        private void Bmas_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 43)
-            {
-                Bigu_Click(sender, e);
-            }
-
-        }
-
-        private void Bres_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 45)
-            {
-                Bres_Click(sender, e);
-            }
-
-        }
-
-        private void Bdiv_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 47)
-            {
-                Bdiv_Click(sender, e);
-            }
-
-        }
-
-        private void Bmult_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 42)
-            {
-                Bmult_Click(sender, e);
-            }
-
-        }
-
-        private void Bigu_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 13)
-            {
-                Bigu_Click(sender, e);
-            }
-
-        }
-
-        private void B0_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 48)
-            {
-                Bigu_Click(sender, e);
+                restb.Text = restb.Text.Substring(0, restb.Text.Length - 1);
             }
         }
 
         private void Bpo_Click(object sender, EventArgs e)
         {
-            if (restb.Text == "")
-            {
-                restb.Text = "%";
-            }
-            else
-            {
-                restb.Text = restb.Text + "%";
-            }
+            a = Convert.ToDouble(this.restb.Text);
+            c = "%";
+            this.restb.Text = Convert.ToString(a / 100);
+            this.restb.Focus();
         }
 
         private void Bc_Click(object sender, EventArgs e)
         {
-            this.restb.Text = ;
+            a = Convert.ToDouble("0");
+            b = Convert.ToDouble("0");
+            this.restb.Text = "";
+            this.restb.Focus();
         }
 
-        //private void Bc_KeyPress(object sender, KeyPressEventArgs e)
+        private void Restb_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == 127)
+            if (e.KeyChar == 13)
             {
-                Bc_Click(sender, e);
+                bigu.PerformClick();
+                this.restb.Focus();
+            }
+            if (e.KeyChar == 43)
+            {
+                bmas.PerformClick();
+                this.restb.Focus();
+            }
+            else if (e.KeyChar == 45)
+            {
+                bres.PerformClick();
+                this.restb.Focus();
+            }
+             else if (e.KeyChar == 42)
+            {
+                bmult.PerformClick();
+                this.restb.Focus();
+            }
+            else if (e.KeyChar == 47)
+            {
+                bdiv.PerformClick();
+                this.restb.Focus();
+            }
+            else if (e.KeyChar == 37)
+            {
+                bpo.PerformClick();
+                this.restb.Focus();
             }
         }
+
     }
 }
