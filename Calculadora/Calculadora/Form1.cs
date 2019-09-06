@@ -190,7 +190,7 @@ namespace Calculadora
                     break;
 
                 case "-":
-                    this.restb.Text = Convert.ToString(b - a);
+                    this.restb.Text = Convert.ToString(a - b);
                     break;
 
                 case "*":
@@ -198,7 +198,7 @@ namespace Calculadora
                     break;
                                        
                 case "/":
-                    this.restb.Text = Convert.ToString(b / a);
+                    this.restb.Text = Convert.ToString(a / b);
                     break;
 
             }
@@ -292,5 +292,19 @@ namespace Calculadora
             }
         }
 
+        private void Restb_TextChanged(object sender, EventArgs e)
+        {
+            if (restb.Text == c)
+            {
+                if (restb.Text.Length == 1)
+                {
+                    restb.Text = "";
+                }
+                else
+                {
+                    restb.Text = restb.Text.Substring(0, restb.Text.Length - 1);
+                }
+            }
+        }
     }
 }

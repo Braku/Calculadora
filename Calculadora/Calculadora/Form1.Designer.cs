@@ -241,6 +241,7 @@
             this.restb.Size = new System.Drawing.Size(252, 26);
             this.restb.TabIndex = 19;
             this.restb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.restb.TextChanged += new System.EventHandler(this.Restb_TextChanged);
             this.restb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Restb_KeyPress);
             // 
             // bpunt
